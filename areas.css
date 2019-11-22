@@ -1,0 +1,40 @@
+.contenedor{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 400px 200px 100px ;
+    grid-template-areas: "header    header      header"
+                         "article   content     aside"
+                         "article   widgets     aside"
+                         "footer    footer      footer"   
+}
+
+.contenedor .header{
+    background-color: crimson;
+    grid-column-start: header;
+    grid-column-end: header;
+    grid-row-start: header;
+    grid-row-end: header ;
+}
+.contenedor .article{
+    background-color: lightslategray;
+    grid-column: article ;
+    grid-row: article;
+}
+
+.contenedor .content{
+    background-color: rgb(34, 49, 65);
+    grid-area: content;
+}
+.contenedor .widgets{
+    background-color: rgb(14, 47, 82);
+    grid-area: widgets;
+}
+.contenedor .aside{
+    background-color: rgb(27, 101, 180);
+    grid-area: aside;
+}
+.contenedor .footer{
+    background-color: rgb(32, 35, 37);
+    grid-area: footer;
+}

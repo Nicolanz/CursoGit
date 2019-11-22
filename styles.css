@@ -15,8 +15,6 @@ h1{
 .contenedor{
     
     width: 99%;
-    height: auto;
-    margin: auto;
     border: 2px solid black;
     font-family: monospace;
     text-align: center;
