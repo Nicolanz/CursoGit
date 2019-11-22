@@ -1,0 +1,21 @@
+.contenedor{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,200px);
+
+    /* alineamiento horizontal */
+    justify-items: center; 
+    /* auto | start | center | end | stretch */
+
+    /* alineamiento vertical */
+    align-items: center;
+    /* auto | start | center | end | stretch */
+}
+
+.contenedor .item{
+    justify-self: stretch;
+    align-self: stretch;
+    background: rgb(23, 201, 201);
+
+}
