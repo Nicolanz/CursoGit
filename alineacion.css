@@ -1,16 +1,21 @@
 .contenedor{
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 150px);
     grid-template-rows: repeat(3,200px);
 
-    /* alineamiento horizontal */
+    /* alineamiento horizontal de los elementos(hijos) */
     justify-items: center; 
     /* auto | start | center | end | stretch */
 
-    /* alineamiento vertical */
+    /* alineamiento vertical de los elementos(hijos) */
     align-items: center;
     /* auto | start | center | end | stretch */
+
+
+    justify-content: space-evenly;
+    /* Acepta propiedades de flexbox como space-between | space-around | space-evenly | end | center | start*/
+    align-content: space-between;
 }
 
 .contenedor .item{
