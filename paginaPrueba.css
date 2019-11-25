@@ -2,31 +2,90 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: #ebeaf4;
+}
 
 .contenedor{
     display: grid;
-    grid-auto-columns: 1fr 1fr 1fr;
-    grid-template-rows:200px 200px 200px ;
+    height: auto;
+    
+    /* border: 20px solid black; */
+    width: 90%;
+    height: 1000px;
+    margin: auto;
+    align-content: space-between;
+    justify-content: space-evenly;
+    grid-template-columns: 2fr 2fr 1.3fr;
+    grid-template-rows: 90px 1fr 150px;
+    grid-gap: 20px;
+    grid-template-areas:    "header         header      header"
+                            "contenido      contenido   sidebar"
+                            "widget1        widget2     sidebar";
+
 }
 
-.contenedor > div{
-    border: 1px solid black;   
-}
+/* .contenedor > div{
+    border: 3px solid black;   
+} */
 .contenedor > .header{
-    background-color: coral;
+    background-color: #13203d;
+    grid-area: header;
+    display: flex;
+    align-items: center;    
 }
-.contenedor > .content{
-    background-color: cornflowerblue;
+.contenedor > .contenido{
+    background-color: #fefefe;;
+    /* grid-area: contenido; */
+    grid-column: contenido ;
+    grid-row: contenido;
+   
 }
 .contenedor > .sidebar{
-    background-color: crimson;
+    background-color: #fca33d;
+    grid-area: sidebar;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 .contenedor > .widget1{
-    background-color: cyan;
+    background-color: #53a5f8;
+    grid-area: widget1;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 .contenedor > .widget2{
-    background-color:  cyan;
+    background-color:  #53a5f8;
+    grid-area: widget2;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
 
 
+
+
+.contenedor h1{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    margin-left: 3%;
+}
+
+.contenedor h2{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    margin-left: 3%;
+}
+
+.contenedor > .contenido > p{
+    text-align: justify;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 95%;
+    margin-left: 3%;
+    
+}

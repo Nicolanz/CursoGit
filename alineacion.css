@@ -5,11 +5,11 @@
     grid-template-rows: repeat(3,200px);
 
     /* alineamiento horizontal de los elementos(hijos) */
-    justify-items: center; 
+    /* justify-items: center;  */
     /* auto | start | center | end | stretch */
 
     /* alineamiento vertical de los elementos(hijos) */
-    align-items: center;
+    /* align-items: center; */
     /* auto | start | center | end | stretch */
 
 
@@ -19,8 +19,8 @@
 }
 
 .contenedor .item{
-    justify-self: stretch;
-    align-self: stretch;
+    /* justify-self: stretch;
+    align-self: stretch; */
     background: rgb(23, 201, 201);
 
 }
