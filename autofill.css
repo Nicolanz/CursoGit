@@ -1,4 +1,10 @@
 .contenedor{
     display: grid;
     grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+    /* Funcionan como un wrap y para hacer Responsive */
+    /* auto-fit: Rellena todo el contenedor con las celdas disponibles */
+    /* auto-fit: No rellena todo el contenedor con las celas dispnibles pero  */
+                /* hace wrap */
 }
