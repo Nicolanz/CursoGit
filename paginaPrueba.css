@@ -14,8 +14,8 @@ body{
     width: 90%;
     height: 1000px;
     margin: auto;
-    align-content: space-between;
-    justify-content: space-evenly;
+    /* align-content: space-between;
+    justify-content: space-evenly; */
     grid-template-columns: 2fr 2fr 1.3fr;
     grid-template-rows: 90px 1fr 150px;
     grid-gap: 20px;
@@ -89,3 +89,45 @@ body{
     margin-left: 3%;
     
 }
+
+@media screen and (max-width:780px) {
+    .contenedor{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        height: auto;
+        grid-template-rows: 120px auto 170px 170px ;
+        grid-template-areas:    "header header"
+                                "contenido contenido"
+                                "sidebar sidebar"
+                                "widget1 widget2"; 
+    }
+    .contenedor h1{
+        font-size: 35px;
+    }
+    .contenedor h2{
+        font-size: 56px;
+        text-align: center;
+    }
+    .contenedor > .contenido > p{
+        font-size: 32px;
+        width: 85%;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .contenedor > .sidebar{
+        margin-top: 30px ;
+    }
+    .contenedor > .sidebar > h2 {
+        font-size: 40px;
+    }
+   
+    .contenedor > .widget1 > h1 {
+        font-size: 30px;
+    }
+    .contenedor > .widget2 > h1 {
+        font-size: 30px;
+    }
+
+
+}
+
