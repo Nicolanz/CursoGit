@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    display: grid;
+    grid-auto-columns: 1fr 1fr 1fr;
+    grid-template-rows:200px 200px 200px ;
+}
+
+.contenedor > div{
+    border: 1px solid black;   
+}
+.contenedor > .header{
+    background-color: coral;
+}
+.contenedor > .content{
+    background-color: cornflowerblue;
+}
+.contenedor > .sidebar{
+    background-color: crimson;
+}
+.contenedor > .widget1{
+    background-color: cyan;
+}
+.contenedor > .widget2{
+    background-color:  cyan;
+}
+
+
+
